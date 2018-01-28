@@ -1,3 +1,30 @@
 body{
-  background-color: blue;
+  text-align: center;
+
+  a.resultPage{
+    color: inherit;
+    text-decoration: inherit;
+
+    div{
+      background-color: red;
+      border-left: 5px solid white;
+      margin: 1% auto 1% auto;
+      text-align: justify;
+      width: 80%;
+
+      h3{
+        padding-left: 2%;
+        padding-top: 2%;
+      }
+
+      p{
+        padding: 0 2% 2% 2%;
+      }
+    }
+
+    div:hover{
+      border-left: 5px solid blue;
+    }
+  }
+
 }

@@ -1,4 +1,20 @@
 body {
-  background-color: blue; }
+  text-align: center; }
+  body a.resultPage {
+    color: inherit;
+    text-decoration: inherit; }
+    body a.resultPage div {
+      background-color: red;
+      border-left: 5px solid white;
+      margin: 1% auto 1% auto;
+      text-align: justify;
+      width: 80%; }
+      body a.resultPage div h3 {
+        padding-left: 2%;
+        padding-top: 2%; }
+      body a.resultPage div p {
+        padding: 0 2% 2% 2%; }
+    body a.resultPage div:hover {
+      border-left: 5px solid blue; }
 
 /*# sourceMappingURL=style.css.map */
