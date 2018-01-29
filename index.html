@@ -4,16 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link rel="stylesheet" href="CSS/style.css">
   <title>Wikipedia Viewer</title>
 </head>
 <body>
-  <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank"><button>Get A Random Page</button></a>
+  <div class="searchBox">
+    <div id="random">
+      <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">Get A Random Page</a>
+    </div>
 
-  <form id="search">
-    <input class="searchTerm" type="search" placeholder="Search Wikipedia">
-    <!-- <input type="submit" value="Search"> -->
-  </form>
+    <form id="search">
+      <!-- <input class="searchTerm" type="search" placeholder="Search Wikipedia"> -->
+      <input class="searchTerm" type="text">
+      <i class="clear hidden">&times;</i>
+    </form>
+    <p>Click Above to Search</p>
+  </div>
 
   <div id="searchResults"></div>
 

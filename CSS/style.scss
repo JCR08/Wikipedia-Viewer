@@ -1,29 +1,100 @@
+/***** COLORS *****/
+$burntorange: #e66900;
+$midnightblue: #002a42;
+
+/***** STYLING *****/
+.hidden{
+  display: none;
+}
+
 body{
+  background-color: $midnightblue;
   text-align: center;
+
+  div.searchBox{
+    margin: 20% auto auto auto;
+
+    div#random {
+      color: white;
+      font-family: 'Roboto', sans-serif;
+      font-size: 1.25rem;
+      margin-bottom: 1%;
+
+      a{
+        text-decoration: none;
+      }
+
+      a:visited{
+        color: white;
+      }
+    }
+
+    form{
+      position: relative;
+      display: inline-block;
+
+      input{
+        background-color: $midnightblue;
+        border: 5px solid $burntorange;
+        border-radius: 30px;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.25rem;
+        padding: 1%;
+        width: 12%;
+      }
+
+      input:focus{
+        outline: none;
+      }
+
+      ::placeholder{
+        color: white;
+      }
+
+      i{
+        color: $burntorange;
+        position: absolute;
+        right:0;
+        top:20%;
+        font-style: normal;
+        font-size: 1.2em;
+        cursor: pointer;
+      }
+    }
+
+    p{
+      color: white;
+      font-family: 'Roboto', sans-serif;
+      font-size: 1.25rem;
+    }
+  }
 
   a.resultPage{
     color: inherit;
     text-decoration: inherit;
 
     div{
-      background-color: red;
-      border-left: 5px solid white;
+      background-color: white;
+      border-left: 5px solid $midnightblue;
       margin: 1% auto 1% auto;
       text-align: justify;
       width: 80%;
 
       h3{
+        font-family: 'Roboto', sans-serif;
         padding-left: 2%;
         padding-top: 2%;
       }
 
       p{
+        font-family: 'Roboto', sans-serif;
         padding: 0 2% 2% 2%;
       }
     }
 
     div:hover{
-      border-left: 5px solid blue;
+      border-left: 5px solid $burntorange;
     }
   }
 
