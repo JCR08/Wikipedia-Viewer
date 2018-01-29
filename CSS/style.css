@@ -9,12 +9,14 @@ body {
   body div.searchBox {
     margin: 20% auto auto auto; }
     body div.searchBox div#random {
-      color: white;
       font-family: 'Roboto', sans-serif;
       font-size: 1.25rem;
       margin-bottom: 1%; }
       body div.searchBox div#random a {
+        color: white;
         text-decoration: none; }
+      body div.searchBox div#random a:hover {
+        text-decoration: underline; }
       body div.searchBox div#random a:visited {
         color: white; }
     body div.searchBox form {
